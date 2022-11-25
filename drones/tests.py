@@ -233,14 +233,4 @@ class DroneTests(APITestCase):
     self.assertEqual(response.data['name'], 'T-800')
 
 
-class PilotTests(APITestCase):
-
-  def test_create_pilot(self):
-    """
-    Ensure we can create a new pilot object.
-    """
-    url = reverse('pilot-list')
-    data = {
-      'name': ' ',
-
 
